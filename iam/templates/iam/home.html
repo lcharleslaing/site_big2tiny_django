@@ -1,0 +1,19 @@
+{% extends 'iam/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="card shadow-sm my-3 p-2">
+        <h1 class="text-uppercase text-center">I am - Manifest Your Life</h1>
+    </div>
+
+    <div class="container-fluid card shadow-sm my-3 p-2">
+        <div class="text-center">
+            <a href="{% url 'authors_home' %}" class="my-1 btn btn-sm btn-outline-primary">Inspirational Authors</a>
+            <a href="" class="my-1 btn btn-sm btn-outline-primary">My Audio Affirmation</a>
+            <a href="" class="my-1 btn btn-sm btn-outline-primary">My Video Affirmation</a>
+            <a href="" class="my-1 btn btn-sm btn-outline-primary">My Revision</a>
+            <a href="" class="my-1 btn btn-sm btn-outline-primary">My Creations</a>
+            <a href="" class="my-1 btn btn-sm btn-outline-primary">My Testimonials</a>
+        </div>
+    </div>
+{% endblock %}

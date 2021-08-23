@@ -1,0 +1,28 @@
+{% extends 'authors/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="card shadow-sm my-3 p-2">
+        <h1 class="text-uppercase text-center">Influential Authors</h1>
+    </div>
+
+    <div class="container-fluid my-3 p-2">
+        <div class="text-center">
+            {% for author in authors %}
+                <a href="" class="shadow-sm my-1 btn btn-sm btn-outline-primary">{{ author.firstname }} {{ author.lastname }}</a>
+            {% endfor %}
+            <div class="justify-content-center row my-3 p-2">
+                {% for author in authors %}
+                    <div class="card shadow-sm mx-1 my-1 p-2" style="width: 250px;">
+                        <img src="{{author.image.url}}" class="card-img-top" alt="{{ author.firstname }} {{ author.lastname }} Picture" width="200px" height="200px">
+                        <div class="card-body">
+                            <p class="card-text">{{ author.firstname }} {{ author.lastname }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

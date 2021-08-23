@@ -1,0 +1,16 @@
+{% load static %}
+<div class="bg-light card shadow-sm mx-1 my-1" style="width: 300px;">
+    <img src="{% static 'home/img/iam.png' %}" class="card-img-top mt-2" alt="I AM Pic" height="250"
+         width="250">
+    <div class="card-body">
+        <h5 class="card-title text-center">I AM</h5>
+        {#                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the#}
+        {#                        card's content.</p>#}
+        <div class="d-grid gap-1 col-10 mx-auto">
+            <div class="text-center">
+                <a href="{% url 'iam_home' %}" class="btn btn-primary my-1">Start</a>
+                <a href="" class="btn btn-primary my-1">About</a>
+            </div>
+        </div>
+    </div>
+</div>
